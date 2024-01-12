@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/scrollbar.css">
     <title>Minha primeira página</title>
 </head>
 
@@ -23,60 +24,206 @@
     </header>
 
     <main>
-        <section>
-            <h2>Olá, Mundo!</h2>
+        <article id="hero">
+            <section class="hero-left">
+                <h1>👋 Olá, Mundo!</h1>
 
-            <p>Olá, seja bem-vindo ao meu website!</p>
+                <h2>Seja bem-vindo ao meu website!</h2>
 
-            <h3>Sobre mim:</h3>
-            <p>Eu me chamo Matheus Teixeira, tenho 19 anos e moro em São Paulo capital. Sempre fui conhecido por ser uma
-                pessoa criativa, curioso sobre milhares de assuntos diferentes e aleatórios e também por ser apaixonado
-                por música, pois você sempre vai me ver com meus fones escutando um som ou com meu violão tocando alguma
-                melodia.
-                <br>
-                Mas, a coisa mais marcante sobre mim é minha paixão por tecnologia. Essa minha notável paixão por
-                tecnologia vem de bem novo: eu sempre fui fascinado por tudo que envolvia computadores, televisões,
-                celulares, ou seja, qualquer dispositivo eletrônico. Sempre buscava entender como utilizá-los, como
-                funcionavam e conhecer todos recursos menos conhecidos ou secretos. Então não era incomum você ver o
-                pequeno Matheus explorando as configurações, ajustes ou até mesmo abrindo e vendo como cada dispositivo
-                funcionava.
-                <br>
-                Por conta dessa paixão, sempre soube que queria seguir na área de tecnologia, tanto é que hoje sou
-                formado em Automação Industrial pelo Liceu de Artes e Ofícios de São Paulo, em que aprendi conceitos
-                mais virados para a parte de Hardware, como eletrônica e programação de microcontroladores.Porém, fiz
-                alguns bootcamps e cursos online e descobri que minha paixão era também voltada para a parte de
-                Software, tanto front-end como back-end. Nesses cursos e bootcamps adquiri conhecimentos valiosos para
-                minha carreira, tanto na parte técnica quanto na parte pessoal, em que me desenvolvi como pessoa e
-                descobri muito sobre mim. Por conta disso, decidi permanecer estudando sobre tecnologia e estou
-                atualmente cursando o terceiro de
-                oito semestes de Ciência da Computação, do qual me formarei em dezembro de 2026.
-                <br>
-                Além da faculdade, realizei o bootcamp Programação Web do Instituto da Oportunidade Social, em que
-                aprendi sobre <strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong> e a biblioteca
-                <strong>React</strong>.
+                <ul class="button-container">
+                    <li><a class="link-btn" target="_blank" href="https://mdteixeira.github.io">Meu Website</a></li>
+                    <li><a class="link-btn" target="_blank" href="https://linkedin.com/in/mdteixeira15">Meu LinkedIn</a>
+                    </li>
+                    <li><a class="link-btn" target="_blank" href="https://github.com/mdteixeira">Meu GitHub</a></li>
+                </ul>
+            </section>
+            <img src="./assets/img/img2.svg" alt="" width="45%" class="hero-img">
+        </article>
+        <article id="sobre-mim">
+            <aside>
+                <ul class="sobre-mim-btns">
+                    <li><input type="radio" name="sobre-mim" value="quem-sou-eu" id="quem-sou-eu" checked>
+                        <label class="sb-btn" for="quem-sou-eu" onclick="Sobremim()">
+                            Sobre mim
+                        </label>
+                    </li>
+                    <li><input type="radio" name="sobre-mim" value="cursos" id="cursos">
+                        <label class="sb-btn" for="cursos" onclick="Sobremim()">
+                            Cursos
+                        </label>
+                    </li>
+                    <li><input type="radio" name="sobre-mim" value="projetos" id="projetos">
+                        <label class="sb-btn" for="projetos" onclick="Sobremim()">
+                            Projetos
+                        </label>
+                    </li>
+                    <li><input type="radio" name="sobre-mim" value="conhecimentos" id="conhecimentos">
+                        <label class="sb-btn" for="conhecimentos" onclick="Sobremim()">
+                            Conhecimentos
+                        </label>
+                    </li>
+                </ul>
+            </aside>
+            <main id="sm-text">
+                <h1 id="sm-title">Selecione um tópico</h1>
+                <div class="field" id="cursos-field">
+                    <card>
+                        <h3>Java React Full-Stack Developer</h3>
+                        <h4>Generation Brasil</h4>
+                        <div class="techs-grid">
+                            <h5>Java</h5>
+                            <h5>Swagger</h5>
+                            <h5>React.js</h5>
+                            <h5>TypeScript</h5>
+                            <h5>JavaSript</h5>
+                            <h5>Git e GitHub</h5>
+                            <h5>Spring</h5>
+                            <h5>MySQL</h5>
+                            <h5>API Rest</h5>
+                            <h5>Scrum</h5>
+                        </div>
+                        <a href="" class="card-btn">Conferir</a>
+                    </card>
+                    <card>
+                        <h3>Programação Web</h3>
+                        <h4>Instituto da Oportunidade Social</h4>
+                        <div class="techs-grid">
+                            <h5>HTML</h5>
+                            <h5>CSS</h5>
+                            <h5>JavaScript</h5>
+                            <h5>Bootstrap</h5>
+                            <h5>Git e GitHub</h5>
+                        </div>
+                        <a href="" class="card-btn">Conferir</a>
+                    </card>
+                    <card>
+                        <h3>Mobile Flutter Developer</h3>
+                        <h4>Digital Innovation One</h4>
+                        <div class="techs-grid">
+                            <h5>Dart</h5>
+                            <h5>Flutter</h5>
+                            <h5>Git e GitHub</h5>
+                            <h5>API Rest</h5>
+                            <h5>MVC</h5>
+                            <h5>Scrum</h5>
+                        </div>
+                        <a href="" class="card-btn">Conferir</a>
+                    </card>
+                </div>
 
-                No momento estou cursando o bootcamp Full-Stack Developer da Generation Brasil, em que vou desenvolver
-                conhecimentos em <strong>Java</strong>, banco de dados com <strong>MySQL</strong>, criação de
-                <strong>APIs</strong> com o framework <strong>Spring</strong>, e
-                desenvolvimento front-end com <strong>React</strong> e o framework <strong>Tailwind</strong>.
-                <br>
-                Essa é minha jornada até aqui, e você pode conhecer alguns dos projetos e cursos que realizei no meu
-                <a class="link" target="_blank" href="https://mdteixeira.github.io">Website</a>, além de acessar meu <a
-                    class="link" target="_blank" href="https://linkedin.com/in/mdteixeira15">LinkedIn</a>
-                e meu
-                <a class="link" target="_blank" href="https://github.com/mdteixeira">GitHub</a>.
-            </p>
-
-            <ul class="button-container">
-                <li><a class="link-btn" target="_blank" href="https://mdteixeira.github.io">Meu Website</a></li>
-                <li><a class="link-btn" target="_blank" href="https://linkedin.com/in/mdteixeira15">Meu LinkedIn</a>
-                </li>
-                <li><a class="link-btn" target="_blank" href="https://github.com/mdteixeira">Meu GitHub</a></li>
-            </ul>
-        </section>
-        <img src="./assets/img/img.svg" alt="" width="45%">
+                <div class="field" id="qse-field">
+                    <ul class="qse-list">
+                        <li>🙋🏻‍♂️ Tenho 19 anos</li>
+                        <li>👨‍💻 Cursando o terceiro semestre de Ciência da Computação</li>
+                        <li>🧑‍🎓 Formado em Automação Industrial pelo Liceu de Artes e Ofícios de São Paulo</li>
+                        <li>💜 Apaixonado por tecnologia e música</li>
+                        <li>📍 Moro na Zona Norte de São Paulo</li>
+                    </ul>
+                </div>
+                <div class="field" id="projetos-field">
+                    <card>
+                        <h3>NewOdonto</h3>
+                        <div class="techs-grid">
+                            <h5>HTML</h5>
+                            <h5>CSS</h5>
+                            <h5>Bootstrap</h5>
+                        </div>
+                        <a href="" class="card-btn">Conferir</a>
+                    </card>
+                    <card>
+                        <h3>Santa Inês Tap House</h3>
+                        <div class="techs-grid">
+                            <h5>HTML</h5>
+                            <h5>CSS</h5>
+                            <h5>Bootstrap</h5>
+                        </div>
+                        <a href="" class="card-btn">Conferir</a>
+                    </card>
+                    <card>
+                        <h3>Calculadora IMC</h3>
+                        <div class="techs-grid">
+                            <h5>HTML</h5>
+                            <h5>CSS</h5>
+                            <h5>Bootstrap</h5>
+                        </div>
+                        <a href="" class="card-btn">Conferir</a>
+                    </card>
+                    <card>
+                        <h3>YouTravel</h3>
+                        <div class="techs-grid">
+                            <h5>HTML</h5>
+                            <h5>CSS</h5>
+                            <h5>Bootstrap</h5>
+                        </div>
+                        <a href="" class="card-btn">Conferir</a>
+                    </card>
+                    <card>
+                        <h3>To-Do List</h3>
+                        <div class="techs-grid">
+                            <h5>HTML</h5>
+                            <h5>CSS</h5>
+                            <h5>React.Js</h5>
+                        </div>
+                        <a href="" class="card-btn">Conferir</a>
+                    </card>
+                </div>
+                <div class="field" id="conhecimentos-field">
+                    <card>
+                        <h3>Front-End</h3>
+                        <div class="techs-grid">
+                            <h4>HTML</h4>
+                            <h4>CSS</h4>
+                            <h4>Tailwind</h4>
+                            <h4>Bootstrap</h4>
+                            <h4>React.Js</h4>
+                            <h4>TypeScript</h4>
+                            <h4>Flutter</h4>
+                            <h4>Figma</h4>
+                            <h4>SCSS</h4>
+                        </div>
+                    </card>
+                    <card>
+                        <h3>Back-End</h3>
+                        <div class="techs-grid">
+                            <h4>Java</h4>
+                            <h4>MySQL</h4>
+                            <h4>Spring Framework</h4>
+                            <h4>Maven</h4>
+                            <h4>Python</h4>
+                            <h4>C#</h4>
+                            <h4>.NET</h4>
+                            <h4>Swagger</h4>
+                            <h4>Dart</h4>
+                            <h4>Node.js</h4>
+                            <h4>API Restful</h4>
+                        </div>
+                    </card>
+                </div>
+            </main>
+        </article>
     </main>
 
+    <footer>
+        <section style="text-align: center;">
+            <h2>Matheus Teixeira</h2>
+            <h3>Full-Stack Developer</h3>
+        </section>
+        <section>
+            <h3>Entre em contato comigo!</h3>
+            <ul class="contatos">
+                <li><a id="linkedin" href="https://linkedin.com/in/mdteixeira15" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a id="github" href="https://GitHub.com/mdteixeira" target="_blank"
+                        rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="mailto:matheusdiegoteixeira@gmail.com" id="mail">E-mail</a></li>
+                <li><a id="whatsapp" href="https://wa.me/5511993602212" target="_blank"
+                        rel="noopener noreferrer">WhatsApp</a></li>
+            </ul>
+        </section>
+    </footer>
+
 </body>
+<script src="script.js"></script>
+<script src="scrollbar.js"></script>
 
 </html>
